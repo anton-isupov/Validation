@@ -6,7 +6,6 @@ public class Main {
         User user = null;
         try {
             user = User.newBuilder()
-                    .name("test123")
                     .email("tes")
                     .password("121212121212")
                     .validateAndBuild();
@@ -14,7 +13,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println("User" + user);
+        System.out.println("User " + user);
 
     }
 }
